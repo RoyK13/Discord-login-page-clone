@@ -1,0 +1,128 @@
+body{
+    margin:0;
+    padding:0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("./bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 100vw;
+    height: 100vh;
+}
+
+body .card{
+    width: 30rem;
+    height: auto;
+    margin: 0px auto;
+    background-color: rgb(58, 57, 57);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+body .card .left-side{
+    text-align: center;
+}
+body .card .left-side p{
+    color: grey;
+}
+body .card .left-side .input-box{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    text-align: left;
+}
+
+body .card .left-side .input-box label{
+    padding: 5px 0px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: grey;
+}
+body .card .left-side .input-box label span{
+    color: red;
+}
+body .card .left-side .input-box input{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+body .card .left-side .forgot-pwd{
+    text-align: left;
+    text-size: 0.8em;
+    color: rgb(24, 101, 223);
+}
+body .card .left-side .forgot-pwd a {
+    color: rgb(24, 101, 223);
+}
+body .card .left-side button{
+    border: none;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(24, 101, 223);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+body .card .left-side .register{
+    text-align: left;
+    font-size: 0.8em;
+    color: grey;
+}
+body .card .left-side .register span{
+    color: rgb(24, 101, 223);
+}
+body .card .right-side{
+    display: none;
+}
+@media only screen and (min-width: 700px) {
+    body .card{
+        display: flex;
+        flex-direction: row;
+        width: 50rem;
+    }
+    body .card .left-side{
+        width: 50%;
+    }
+    body .card .right-side{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 40%;
+        padding: 0px 0px 0px 40px;
+    }
+    body .card .right-side img{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 10px;
+        background-color: white;
+        padding: 10px;
+    }
+    body .card .right-side h1{
+        width: 13rem;
+        text-align: center;
+        font-size: 1.7em;
+    }
+    body .card .right-side p{
+        text-align: center;
+        width: 15rem;
+        font-size: 1em;
+    }
+    body .card .right-side span{
+        font-weight: bold;
+    }
+}
